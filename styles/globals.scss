@@ -29,10 +29,12 @@ html {
 }
 
 body {
+  line-height: 1.5;
   padding: 0;
   margin: 0;
   font-family: var(--font-face);
   font-weight: var(--regular);
+  font-size: 1.5rem;
   color: var(--white);
 }
 
@@ -43,7 +45,7 @@ a {
 
 // reusable container for all sections to keep common dimensions
 .container {
-  max-width: 110rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -51,13 +53,11 @@ a {
 .section-heading {
   margin-bottom: 6rem;
   font-size: 4rem;
-  color: var(--white);
   text-align: center;
 }
 
 .card {
   padding: 2.5rem;
-  background: url('../public/images/black-bg-pattern.png');
   border-radius: 0.5rem;
 }
 
@@ -68,7 +68,7 @@ a {
 }
 
 .section-container {
-  margin-top: 7rem;
+  // margin-top: 7rem;
   padding: 4rem;
 }
 
@@ -82,4 +82,8 @@ a {
 
 .bg-accent {
   background-color: var(--accent);
+}
+
+.bg-pattern {
+  background: url('../public/images/black-bg-pattern.png');
 }
