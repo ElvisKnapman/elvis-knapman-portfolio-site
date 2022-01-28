@@ -7,12 +7,14 @@
   --bold: 600;
 
   /* colours */
-  --primary: #000;
-  --secondary: #fff;
-  --accent: #39c;
+  --primary: hsl(0, 0%, 0%);
+  --secondary: hsl(0, 0%, 100%);
+  --accent: hsl(200, 60%, 50%);
 
-  --black: #000;
-  --white: #fff;
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(40, 0%, 80%);
+  --dark-grey: hsl(40, 0%, 30%);
 }
 
 html {
@@ -31,9 +33,53 @@ body {
   margin: 0;
   font-family: var(--font-face);
   font-weight: var(--regular);
+  color: var(--white);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+// reusable container for all sections to keep common dimensions
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+// common section heading
+.section-heading {
+  margin-bottom: 6rem;
+  font-size: 4rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.card {
+  padding: 2.5rem;
+  background: url('../public/images/black-bg-pattern.png');
+  border-radius: 0.5rem;
+}
+
+// photo class is global because of NextJS limitations on adding classes that are modules
+.photo {
+  height: 10px;
+  border-radius: 50%;
+}
+
+.section-container {
+  margin-top: 7rem;
+  padding: 4rem;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-accent {
+  background-color: var(--accent);
 }
