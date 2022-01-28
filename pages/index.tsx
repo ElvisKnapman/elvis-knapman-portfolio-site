@@ -1,5 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+
+import NavBar from '../components/NavBar/Navbar';
+
 import styles from '../styles/Home.module.scss';
 
 const Home: NextPage = () => {
@@ -15,7 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1>Elvis Knapman</h1>
+        <NavBar />
       </main>
     </div>
   );
