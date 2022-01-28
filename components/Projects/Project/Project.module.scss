@@ -1,0 +1,42 @@
+.project-bg {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(34, 34, 34);
+  border: 1px solid rgb(54, 54, 54);
+  border-top: 4px solid var(--accent);
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: var(--bold);
+}
+
+.project-subtitle {
+  display: inline-block;
+  margin: 2rem 0 1rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--black);
+  background-color: var(--secondary);
+  border-radius: 4px;
+}
+
+.buttons-container {
+  margin-top: auto;
+}
+
+.projects-buttons-flex {
+  margin-top: 8rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+
+  .projects-link {
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    background-color: var(--primary);
+    text-align: center;
+    flex: 1 1 auto;
+  }
+}
