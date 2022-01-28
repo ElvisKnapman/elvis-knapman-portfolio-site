@@ -1,4 +1,16 @@
-@import 'reset';
+:root {
+  /* font related */
+  --font-face: 'Exo 2', sans-serif;
+  --x-light: 200;
+  --light: 300;
+  --regular: 400;
+  --bold: 600;
+
+  /* colours */
+  --primary: #000;
+  --secondary: #fff;
+  --accent: #39c;
+}
 
 html {
   font-size: 62.5%;
@@ -14,6 +26,8 @@ html {
 body {
   padding: 0;
   margin: 0;
+  font-family: var(--font-face);
+  font-weight: var(--regular);
 }
 
 a {
