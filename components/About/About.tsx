@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className='section-container bg-accent'>
       <div className='container'>
-        <h1 className='section-heading'>About</h1>
+        <h2 className='section-heading'>About</h2>
         <div className={styles['about-grid']}>
           <div className={styles.photo}>
             <Image
@@ -18,8 +18,7 @@ const About = () => {
               height='300'
             />
           </div>
-          <div className='card'>
-            <h3 className={styles['about-name-heading']}>Elvis Knapman</h3>
+          <div className='card bg-pattern'>
             <p className={styles['about-text']}>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
               dignissimos deleniti quasi dicta neque magni consequatur nobis
