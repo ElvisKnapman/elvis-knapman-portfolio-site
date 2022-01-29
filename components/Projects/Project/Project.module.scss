@@ -4,6 +4,9 @@
   background-color: rgb(34, 34, 34);
   border: 1px solid rgb(54, 54, 54);
   border-top: 4px solid var(--accent);
+  flex: 0 0 30%;
+  width: 100%;
+  min-width: 30rem;
 }
 
 .project-title {
