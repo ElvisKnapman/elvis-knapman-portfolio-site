@@ -6,7 +6,7 @@ const Contact = () => {
       className={`section-container bg-secondary ${styles['section-text']}`}>
       <div className='container'>
         <h2 className='section-heading'>Contact</h2>
-        <div className={styles['contact-grid']}>
+        <div className={styles['contact-flex-container']}>
           <div className={styles['contact-info']}>
             <h3>Let&apos;s talk!</h3>
             <p>

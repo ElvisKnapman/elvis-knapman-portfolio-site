@@ -8,7 +8,7 @@ const Projects = () => {
     <section className='section-container bg-primary'>
       <div className='container'>
         <h2 className='section-heading'>Projects</h2>
-        <div className={styles['projects-grid']}>
+        <div className={styles['projects-flex-container']}>
           {projects.map((project) => (
             <Project key={project.id} project={project} />
           ))}

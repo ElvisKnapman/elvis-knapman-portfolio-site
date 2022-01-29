@@ -2,10 +2,19 @@
   color: var(--black);
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8rem;
+.contact-flex-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+
+  .contact-info {
+    flex: 1 2 40%;
+  }
+
+  .contact-form {
+    flex: 1 1 55%;
+  }
 }
 
 .form {
