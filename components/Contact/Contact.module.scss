@@ -1,0 +1,96 @@
+.section-text {
+  color: var(--black);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: var(--accent);
+  border-radius: 4px;
+  box-shadow: 3px 3px 12px hsla(0, 0%, 0%, 0.3);
+
+  color: var(--white);
+
+  .form-heading {
+    font-size: 3rem;
+    margin: -1rem 0 2rem;
+    font-weight: var(--bold);
+  }
+
+  label {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    font-weight: var(--bold);
+  }
+
+  input,
+  textarea {
+    margin: 1rem 0;
+    border: 2px solid transparent;
+    outline: none;
+    padding: 0.6rem 1rem;
+    border-radius: inherit;
+    font-size: 1.7rem;
+    font-family: var(--font);
+    font-weight: var(--bold);
+    box-shadow: 1px 2px 12px hsla(0, 0%, 0%, 0.3);
+    transition: border 0.2s ease-in;
+
+    &:focus {
+      border-color: black;
+    }
+  }
+
+  .submit-button {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    border: 2px solid transparent;
+    padding: 1rem 1rem;
+    font-size: 1.8rem;
+    font-family: var(--font);
+    font-weight: var(--bold);
+    text-transform: uppercase;
+    background-color: var(--primary);
+    color: var(--secondary);
+    max-width: 20rem;
+    border-radius: inherit;
+    text-align: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: inherit;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover {
+      .email-icon {
+        animation-name: mailAnimation;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.3s;
+      }
+    }
+  }
+}
+
+@keyframes mailAnimation {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(5px, -5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
