@@ -4,6 +4,7 @@ import Head from 'next/head';
 import NavBar from '../components/NavBar/Navbar';
 import About from '../components/About/About';
 import Projects from '../components/Projects/Projects';
+import Contact from '../components/Contact/Contact';
 
 import styles from '../styles/Home.module.scss';
 
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
         <NavBar />
         <About />
         <Projects />
+        <Contact />
       </main>
     </div>
   );
