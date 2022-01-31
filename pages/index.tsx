@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar/Navbar';
 import About from '../components/About/About';
 import Projects from '../components/Projects/Projects';
 import Contact from '../components/Contact/Contact';
+import Footer from '../components/Footer/Footer';
 
 import styles from '../styles/Home.module.scss';
 
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
         <About />
         <Projects />
         <Contact />
+        <Footer />
       </main>
     </div>
   );
