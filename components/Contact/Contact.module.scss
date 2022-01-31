@@ -5,6 +5,7 @@
 .contact-flex-container {
   width: 100%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   gap: 6rem;
 
@@ -13,7 +14,7 @@
   }
 
   .contact-form {
-    flex: 1 1 55%;
+    flex: 1 1 50%;
   }
 }
 
