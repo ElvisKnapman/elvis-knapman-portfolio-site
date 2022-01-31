@@ -3,6 +3,17 @@ import Image from 'next/image';
 
 import photo from '../../public/images/elvis-knapman-photo.jpg';
 
+import {
+  SiJavascript,
+  SiReact,
+  SiTypescript,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiHtml5,
+  SiCss3,
+  SiSass,
+} from 'react-icons/si';
+
 const About = () => {
   return (
     <section className='section-container bg-accent'>
@@ -20,16 +31,47 @@ const About = () => {
           </div>
           <div className='card bg-pattern'>
             <p className={styles['about-text']}>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
-              dignissimos deleniti quasi dicta neque magni consequatur nobis
-              veritatis illo eum a in, similique quam maxime omnis sed voluptate
-              perspiciatis dolore. Placeat rerum earum ipsum! Quis nisi eos
-              molestiae omnis corporis. Nam esse ipsa provident nihil mollitia,
-              pariatur minima, nesciunt autem nulla aperiam distinctio modi
-              quibusdam ipsum quas veniam, quasi saepe? Adipisci, quis. Veniam
-              libero eveniet repudiandae eius impedit quidem cupiditate tempora
-              incidunt distinctio et, corporis ut assumenda non at cum alias, ea
-              possimus iure sunt.
+              <span style={{ fontSize: '2.5rem' }}>👋</span> Hi, I&apos;m Elvis.
+              I&apos;m a full-stack software developer with a focus on front-end
+              development. I have been using JavaScript (and all its friends)
+              since 2017, and have been developing JavaScript fatigue ever since
+              😂
+              <p style={{ marginTop: '3rem' }}>
+                Some technologies I currently enjoy working with:
+              </p>
+              <div className={styles['technologies-flex-container']}>
+                <span
+                  className={`${styles['tech-icon']} ${styles['html-icon']}`}>
+                  <SiHtml5 />
+                </span>
+                <span
+                  className={`${styles['tech-icon']} ${styles['css-icon']}`}>
+                  <SiCss3 />
+                </span>
+                <span
+                  className={`${styles['tech-icon']} ${styles['sass-icon']}`}>
+                  <SiSass />
+                </span>
+                <span
+                  className={`${styles['tech-icon']} ${styles['javascript-icon']}`}>
+                  <SiJavascript />
+                </span>
+                <span
+                  className={`${styles['tech-icon']} ${styles['typescript-icon']}`}>
+                  <SiTypescript />
+                </span>
+                <span
+                  className={`${styles['tech-icon']} ${styles['react-icon']}`}>
+                  <SiReact />
+                </span>
+                <span className={`${styles['tech-icon']}`}>
+                  <SiNextdotjs />
+                </span>
+                <span
+                  className={`${styles['tech-icon']} ${styles['nodejs-icon']}`}>
+                  <SiNodedotjs />
+                </span>
+              </div>
             </p>
           </div>
         </div>
