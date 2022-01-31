@@ -17,12 +17,17 @@
 .project-subtitle {
   display: inline-block;
   margin: 2rem 0 1rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.5rem 0.7rem;
   font-size: 1.7rem;
   font-weight: bold;
   color: var(--black);
   background-color: var(--secondary);
+  // border-bottom: 2px solid var(--white);
   border-radius: 4px;
+}
+
+.project-screenshot {
+  margin: 2rem 0;
 }
 
 .buttons-container {
