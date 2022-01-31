@@ -10,6 +10,7 @@ export type Project = {
 
 import movieScreenshot from '../public/images/movie-site-screen.jpg';
 import hockeyScreenshot from '../public/images/hockey-shop-screenshot.png';
+import portfolioScreenshot from '../public/images/portfolio-screenshot.png';
 
 export const projects: Project[] = [
   {
@@ -35,7 +36,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: 'Portfolio site',
-    image: movieScreenshot,
+    image: portfolioScreenshot,
     description:
       'The beautiful site for the even more beautiful software developer that you are currently viewing.',
     techStack: ['NextJS', 'TypeScript', 'SASS modules'],
