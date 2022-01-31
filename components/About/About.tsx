@@ -36,9 +36,6 @@ const About = () => {
               development. I have been using JavaScript (and all its friends)
               since 2017, and have been developing JavaScript fatigue ever since
               😂
-              <p style={{ marginTop: '3rem' }}>
-                Some technologies I currently enjoy working with:
-              </p>
               <div className={styles['technologies-flex-container']}>
                 <span
                   className={`${styles['tech-icon']} ${styles['html-icon']}`}>
