@@ -8,26 +8,10 @@ const Contact = () => {
         <h2 className='section-heading'>Contact</h2>
         <div className={styles['contact-flex-container']}>
           <div className={styles['contact-info']}>
-            <h3>Let&apos;s talk!</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Recusandae eos asperiores corrupti ipsum ut eveniet veniam aut
-              fuga, sequi ipsam officia debitis, ab dolorem quis! Alias
-              praesentium odit maiores laboriosam. Quae, officiis? Ullam nisi
-              facere architecto quam id modi corrupti impedit sunt consectetur
-              tenetur nostrum cupiditate praesentium hic maxime laudantium
-              accusamus aspernatur nesciunt quo magnam accusantium, at animi?
-              Labore, beatae? Dicta pariatur accusamus ratione nesciunt, maiores
-              aliquid quisquam, perferendis quibusdam doloribus asperiores
-              dolore at repellendus tempora voluptate ad quia expedita illo non
-              exercitationem earum! Eligendi eum at voluptatibus vel nulla!
-              Accusamus ipsum a eos expedita nulla explicabo inventore vitae
-              harum quibusdam temporibus quidem reprehenderit qui quae placeat
-              fugit iste atque, deleniti dignissimos ex enim non animi ab!
-              Perferendis, a accusamus. Dolorem asperiores praesentium maiores
-              repudiandae ipsam recusandae pariatur, iure beatae minima quam
-              tenetur enim quis laboriosam nisi, sint nobis. Id, molestiae vitae
-              quod quasi ipsum sit rem dicta quam maiores?
+            {/* <h3 className={styles['contact-info-heading']}>Let&apos;s talk!</h3> */}
+            <p className={styles['form-intro-text']}>
+              Want to talk about a new opportunity? Life? Your favourite TV
+              Show? How my love for hockey makes me TOO Canadian?
             </p>
           </div>
           <div className={styles['contact-form']}>
