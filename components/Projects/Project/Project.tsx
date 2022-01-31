@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Project, projects } from '../../../data/projects';
 import styles from './Project.module.scss';
 
@@ -9,6 +10,9 @@ const Project = ({ project }: ProjectProps) => {
   return (
     <div className={`card ${styles['project-bg']}`}>
       <h3 className={styles['project-title']}>{project.title}</h3>
+      <div className={styles['project-screenshot']}>
+        <Image src={project.image} alt={project.title} />
+      </div>
       <h5 className={styles['project-subtitle']}>Technologies Used</h5>
       <p className={styles['project-technologies']}>
         ({project.techStack.join(', ')})
@@ -19,12 +23,16 @@ const Project = ({ project }: ProjectProps) => {
         <div className={styles['projects-buttons-flex']}>
           <a
             className={styles['projects-link']}
-            href='https://www.github.com/ElvisKnapman'>
+            href={project.onlineUrl}
+            target='_blank'
+            rel='noreferrer'>
             View Online
           </a>
           <a
             className={styles['projects-link']}
-            href='https://www.github.com/ElvisKnapman'>
+            href={project.githubUrl}
+            target='_blank'
+            rel='noreferrer'>
             View on Github
           </a>
         </div>

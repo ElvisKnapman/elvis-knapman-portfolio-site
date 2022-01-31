@@ -1,19 +1,23 @@
 export type Project = {
   id: number;
   title: string;
-  image: string;
+  image: StaticImageData;
   description: string;
   techStack: string[];
   onlineUrl: string;
   githubUrl: string;
 };
 
+import movieScreenshot from '../public/images/movie-site-screen.jpg';
+import hockeyScreenshot from '../public/images/hockey-shop-screenshot.png';
+
 export const projects: Project[] = [
   {
     id: 1,
     title: 'Movie App',
-    image: 'fdklfd',
-    description: 'Description for movie app',
+    image: movieScreenshot,
+    description:
+      'Movie app created with some inspiration from sites like Rotten Tomatoes. Shows popular, top rated and trending movies. Has a search feature to search the database for specific movies (search implements debounce to prevent unnecessary api calls).',
     techStack: ['React', 'React Router', 'Redux', 'SASS modules'],
     onlineUrl: 'https://elvisk-movies.netlify.app',
     githubUrl: 'https://github.com/ElvisKnapman/movie-app',
@@ -21,8 +25,9 @@ export const projects: Project[] = [
   {
     id: 2,
     title: 'Hockey E-commerce App',
-    image: 'fdlkfjlkd',
-    description: 'Description for e-commerce app',
+    image: hockeyScreenshot,
+    description:
+      'Pure front-end application that shows some product data and implements a shopping cart system with quantity and delete controls. Also has test Stripe payment integration.',
     techStack: ['React', 'React Router', 'Redux Toolkit', 'CSS modules'],
     onlineUrl: 'https://ek-hockey.netlify.app',
     githubUrl: 'https://github.com/ElvisKnapman/hockey-ecommerce-store',
@@ -30,8 +35,9 @@ export const projects: Project[] = [
   {
     id: 3,
     title: 'Portfolio site',
-    image: 'fdlfjld',
-    description: 'Description for portfolio site',
+    image: movieScreenshot,
+    description:
+      'The beautiful site for the even more beautiful software developer that you are currently viewing.',
     techStack: ['NextJS', 'TypeScript', 'SASS modules'],
     onlineUrl: 'https://knapman.dev',
     githubUrl: 'https://github.com/ElvisKnapman/elvis-knapman-portfolio-site',
