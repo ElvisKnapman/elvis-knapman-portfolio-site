@@ -70,6 +70,10 @@ a {
 .section-container {
   scroll-margin: 3rem;
   padding: 4rem;
+
+  @media (max-width: $phone-lg) {
+    padding: 2rem;
+  }
 }
 
 .bg-primary {

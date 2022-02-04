@@ -96,6 +96,10 @@
         animation-duration: 0.3s;
       }
     }
+
+    @media (max-width: $phone-lg) {
+      max-width: 100%;
+    }
   }
 }
 
