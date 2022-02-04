@@ -16,7 +16,7 @@ import {
 
 const About = () => {
   return (
-    <section className='section-container bg-accent'>
+    <section id='about' className='section-container bg-accent'>
       <div className='container'>
         <h2 className='section-heading'>About</h2>
         <div className={styles['about-grid']}>
