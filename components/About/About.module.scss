@@ -20,13 +20,13 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-around;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
 
   & > .tech-icon {
     font-size: 3.5rem;
     text-align: center;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
   }
 
   .html-icon {

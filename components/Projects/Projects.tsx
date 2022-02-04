@@ -5,7 +5,7 @@ import Project from './Project/Project';
 
 const Projects = () => {
   return (
-    <section className='section-container bg-primary'>
+    <section id='projects' className='section-container bg-primary'>
       <div className='container'>
         <h2 className='section-heading'>Projects</h2>
         <div className={styles['projects-flex-container']}>

@@ -3,6 +3,7 @@ import { IoIosSend } from 'react-icons/io';
 const Contact = () => {
   return (
     <section
+      id='contact'
       className={`section-container bg-secondary ${styles['section-text']}`}>
       <div className='container'>
         <h2 className='section-heading'>Contact</h2>

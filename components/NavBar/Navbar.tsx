@@ -5,6 +5,14 @@ import logo from '../../public/images/ek-only-nav-opti.png';
 import styles from './NavBar.module.scss';
 
 const NavBar = () => {
+  const handleScroll = (e: React.SyntheticEvent, id: string) => {
+    e.preventDefault();
+    const section = document.querySelector(id);
+    section?.scrollIntoView({
+      // top: 40,
+      behavior: 'smooth',
+    });
+  };
   return (
     <nav className={styles.navbar}>
       <div className={styles['nav-container']}>
@@ -12,17 +20,17 @@ const NavBar = () => {
         <ul>
           <li>
             <Link href='/'>
-              <a>About</a>
+              <a onClick={(e) => handleScroll(e, '#about')}>About</a>
             </Link>
           </li>
           <li>
             <Link href='/'>
-              <a>Projects</a>
+              <a onClick={(e) => handleScroll(e, '#projects')}>Projects</a>
             </Link>
           </li>
           <li>
             <Link href='/'>
-              <a>Contact</a>
+              <a onClick={(e) => handleScroll(e, '#contact')}>Contact</a>
             </Link>
           </li>
         </ul>
