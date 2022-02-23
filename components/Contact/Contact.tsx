@@ -18,6 +18,7 @@ const Contact = () => {
           <div className={styles["contact-form"]}>
             <form
               method="POST"
+              action="/"
               className={styles["form"]}
               name="portfolio-site-contact"
               data-netlify="true"
