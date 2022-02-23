@@ -29,17 +29,18 @@ const Contact = () => {
                 value="portfolio-site-contact"
               />
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" />
+              <input type="text" id="name" required />
 
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" />
+              <input type="email" id="email" required />
 
               <label htmlFor="message">Message</label>
               <textarea
                 name="message"
                 id="message"
                 cols={5}
-                rows={5}></textarea>
+                rows={5}
+                required></textarea>
               <button className={styles["submit-button"]} type="submit">
                 Send{" "}
                 <IoIosSend
